@@ -5,7 +5,7 @@ import "./Header.css"
 
 const Header = () => {
     return (
-        <Navbar bg="white" expand="lg" className='border-bottom border-light'>
+        <Navbar bg="white" expand="lg" className='border-bottom border-light d-none d-sm-block'>
             <Container>
                 <Link to='/' className='navbar-brand'>Laziz.Dev</Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
