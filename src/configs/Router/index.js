@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Blog, Portofolio } from '../../components/pages'
+import { Blog, Home, Portofolio } from '../../components/pages'
 import Authenticated from '../../components/templates/Authenticated'
 import Guest from '../../components/templates/Guest'
 const Router = () => {
@@ -8,6 +8,7 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Guest />}>
+                    <Route path='/' element={<Home />} />
                     <Route path='/blog' element={<Blog />} />
                     <Route path='/portofolio' element={<Portofolio />} />
                 </Route>

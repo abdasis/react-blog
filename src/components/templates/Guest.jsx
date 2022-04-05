@@ -1,6 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
-import { Blog } from '../pages'
+import { Outlet } from 'react-router-dom'
 import Header from '../ui/organisms/Header'
 
 const Guest = () => {
